@@ -11,11 +11,15 @@
   <img src="https://s-media-cache-ak0.pinimg.com/736x/c2/f7/1e/c2f71eff34d094bf3c8de14616b7266e.jpg">
 </h2>
 
-
 <script>
 $(window).resize(function() {
+  var variable = $(window).width()/13;
   if($(window).width() < 500){
-    document.getElementById("h1").style.width = '20px';
+    $('#h1').css('font-size', variable);
+    $('#h2').css('width', "30");
+  }else{
+    $('#h1').css('font-size', '40px');
+    $('#h2').css('width', "30");
   }
 });
 </script>
